@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/under_our_partners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="SF Pro Display"
+        android:text="Enjoy over 120 partners in different categories"
+        android:textAlignment="viewStart"
+        android:textColor="#999999"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/our_partners" />
+
+    <EditText
+        android:id="@+id/searchbar"
+        style="SF Pro Display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="           Search for partners"
+        android:marg="126dp"
+        android:padding="5dip"
+        android:textAlignment="textStart"
+        android:textColor="#999999"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="@id/searchbar"
+        app:layout_constraintStart_toStartOf="@+id/searchbar"
+        app:layout_constraintTop_toTopOf="@+id/searchbar"
+        app:srcCompat="@drawable/ic_noun_search_3184147" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="177dp"
+        android:fontFamily="SF Pro Display"
+        android:text="Points"
+        android:textAlignment="viewStart"
+        android:textColor="#FF7900"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Gift"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/our_partners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="340dp"
+        android:fontFamily="SF Pro Display"
+        android:text="Our partners"
+        android:textAlignment="viewStart"
+        android:textColor="#FF7900"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CollectedPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="SF Pro Display"
+        android:text="Collected points"
+        android:textAlignment="viewStart"
+        android:textColor="#999999"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/points" />
+
+    <ImageView
+        android:id="@+id/Gift"
+        android:layout_width="34dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:srcCompat="@drawable/ic_noun_gift_901811"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="SF Pro Display"
+        android:textAlignment="textStart"
+        android:textColor="#333333"
+        android:textSize="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchbar"
+        tools:text="8950" />
+
+    <EditText
+        android:id="@+id/converterbox"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/converter_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CollectedPoints" />
+
+    <EditText
+        android:id="@+id/EGP"
+        android:layout_width="125dp"
+        android:layout_height="37dp"
+        android:backgroundTint="#999999"
+        android:fontFamily="SF Pro Display"
+        android:hint="EGP"
+        android:textAlignment="textStart"
+        android:textColor="#999999"
+        android:textSize="11dp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <TextView
+        android:id="@+id/points_converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="SF Pro Display"
+        android:text="Points converter"
+        android:textAlignment="textStart"
+        android:textColor="#333333"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/converterbox"
+        app:layout_constraintTop_toTopOf="@+id/converterbox" />
+
+    <EditText
+        android:id="@+id/Points"
+        android:layout_width="125dp"
+        android:layout_height="37dp"
+        android:backgroundTint="#999999"
+        android:fontFamily="SF Pro Display"
+        android:hint="Points"
+        android:textAlignment="textStart"
+        android:textColor="#999999"
+        android:textSize="11dp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="270dp"
+        tools:text="Points" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="311dp"
+        android:layout_height="583dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/under_our_partners"
+        tools:listitem="@layout/list_items"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="9dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="@+id/converterbox"
+        app:layout_constraintEnd_toStartOf="@+id/EGP"
+        app:layout_constraintHorizontal_bias="0.649"
+        app:layout_constraintStart_toEndOf="@+id/Points"
+        app:layout_constraintTop_toTopOf="@+id/converterbox"
+        app:layout_constraintVertical_bias="0.769"
+        app:srcCompat="@drawable/ic_compare_arrows_black_24dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
